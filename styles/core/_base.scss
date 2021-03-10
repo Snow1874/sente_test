@@ -20,7 +20,7 @@
 
 .mv {
   position: relative;
-  background-image: url(/img/mv_img.png);
+  background-image: url(../img/mv_img.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -133,11 +133,14 @@
   &__diagram {
     margin: 120px auto 0 auto;
     width: 87%;
-    @include sp {
-      width: 100%;
+    @include lg {
+      max-width: 1400px;
     }
     @include tb {
       margin: 60px auto 0 auto;
+    }
+    @include sp {
+      width: 100%;
     }
     &__img {
       width: 100%;
@@ -327,7 +330,7 @@
           &:before {
             content: "";
             position: absolute;
-            background-image: url(/img/use_list_head.svg);
+            background-image: url(../img/use_list_head.svg);
             background-repeat: no-repeat;
             background-size: contain;
             width: 18px;
@@ -359,15 +362,26 @@
       @include tb {
         margin: initial;
       }
+      @include sp {
+        margin: 40px 0 0 0;
+      }
     }
     &__item:nth-of-type(3) {
       margin: initial;
       @include tb {
         margin: 40px 3% 0 0;
       }
+      @include sp {
+        margin: 40px 0 0 0;
+      }
     }
     &__item:nth-of-type(4) {
       @include tb {
+        margin: 40px 0 0 0;
+      }
+    }
+    &__item:nth-of-type(5) {
+      @include sp {
         margin: 40px 0 0 0;
       }
     }
@@ -643,7 +657,7 @@
           &:after {
             content: "";
             position: absolute;
-            background-image: url(/img/accordion_close.svg);
+            background-image: url(../img/accordion_close.svg);
             background-repeat: no-repeat;
             background-size: contain;
             top: 50%;
@@ -658,7 +672,7 @@
         }
         &__question.open {
           &:after {
-            background-image: url(/img/accordion_open.svg);
+            background-image: url(../img/accordion_open.svg);
           }
         }
         &__answer {
