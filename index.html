@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>自然言語処理AIプラットフォーム Sente</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+    <div class="mv">
+        <div class="mv_txt">
+            <h1 class="mv_logo">
+                <img src="img/mv_logo.svg" alt="sente">
+            </h1>
+            <h2 class="mv_title">
+                自然言語処理AI<br class="br_tb">プラットフォーム
+                <span>言葉から世界を俯瞰し、未来を予測する自然言語処理AIプラットフォーム</span>
+            </h2>
+            <div class="mv_btn">
+                <a href="">資料請求</a>
+            </div>
+          </div>
+    </div>
+    </div>
+
+    <main>
+        <section class="about">
+            <div class="section_inner">
+                <div class="about__title">
+                    <h2 class="about__title__main">自然言語処理AI<br class="br_sp">プラットフォーム Sente</h2>
+                    <p class="about__title__lead">
+                        ”Sente（センテ）”は、キーウォーカーのAI技術とクラウドにおける仮想化技術によって構築された、自然言語処理のデータ分析プラットフォームです。<br>
+                        囲碁における”先手”のように、世の中や組織の中で日々生成される大量のテキスト情報を瞬時に分析することで、相手に先んじるための”先手を取る”、ことを意味しています。<br>
+                        テキスト情報から意味理解をおこない、経営戦略の高度な意思決定を実現します。
+                    </p>
+                </div>
+            </div>
+            <div class="about__diagram">
+                <div class="about__diagram__img">
+                    <img class="about_diagram_pc" src="img/about_diagram.png" alt="">
+                    <img src="img/sp_about_diagram.png" alt="" class="about_diagram_sp">
+                </div>
+                <div class="about__diagram__text">
+                    <h3 class="about__diagram__text__desc">
+                        教師データ作成から学習モデル生成、分析実行・可視化まで
+                        <span>教師データの作成から学習モデル生成、分析の実行、可視化まで一連のタスクを実装しています。</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="section_inner">
+                <div class="about__features flex">
+                    <div class="about__features__feature">
+                        <h4 class="about__features__feature__title">BERT等の最新言語モデルを採用</h4>
+                        <div class="about__features__feature__titleUnderbar"></div>
+                        <p class="about__features__feature__lead">Senteでは、Googleが開発したBERTと呼ばれる自然言語処理の分析モデルやそのBERTの派生形であるXLNetやALBERT、同じくTransformerベースのPEGASUS等、目的にあわせたモデルを適用しています。</p>
+                    </div>
+                    <div class="about__features__feature">
+                        <h4 class="about__features__feature__title">CloudTPUを用いた高速演算処理の実装</h4>
+                        <div class="about__features__feature__titleUnderbar"></div>
+                        <p class="about__features__feature__lead">
+                            BERTのプログラムはクラウド上のKubernetesという仮想化エンジンから実行します。<br>
+                            学習を行うLearnerと推論を行うAnalyzerがあり、Analyzerでは解析対象ごとにPodが起動します。<br>
+                            PodごとにCloud TPUを起動して計算を高速化します。必要な時に必要なだけリソースを割り当て（スケジューリング）されるため、低予算での演算処理が可能になります。                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solution">
+            <div class="section_inner">
+                <h2 class="section_title">Senteのソリューション</h2>
+                <div class="solution__items flex">
+                    <div class="solution__items__item">
+                        <div class="solution__items__item__img">
+                            <img src="img/solution_img1.svg" alt="">
+                        </div>
+                        <h3 class="solution__items__item__title">固有表現抽出</h3>
+                        <p class="solution__items__item__lead">ドキュメント内の特徴語を意味カテゴリごとに抽出します。場所、人名、組織、製品やサービス、イベント、企業の強みや弱み、様々な表現を抽出します。</p>
+                    </div>
+                    <div class="solution__items__item">
+                        <div class="solution__items__item__img">
+                            <img src="img/solution_img2.svg" alt="">
+                        </div>
+                        <h3 class="solution__items__item__title">タグによる文章分類</h3>
+                        <p class="solution__items__item__lead">ドキュメント内に表現されている様々な意味属性を認識し、タグ付けをおこないます。</p>
+                    </div>
+                    <div class="solution__items__item">
+                        <div class="solution__items__item__img">
+                            <img src="img/solution_img3.svg" alt="">
+                        </div>
+                        <h3 class="solution__items__item__title">自動要約</h3>
+                        <p class="solution__items__item__lead">ドキュメントを自動要約します。</p>
+                    </div>
+                    <div class="solution__items__item">
+                        <div class="solution__items__item__img">
+                            <img src="img/solution_img4.svg" alt="">
+                        </div>
+                        <h3 class="solution__items__item__title">質問回答</h3>
+                        <p class="solution__items__item__lead">ユーザーの質問に対して、対話形式で回答します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="use">
+            <div class="section_inner">
+                <h2 class="section_title">活用事例</h2>
+                <div class="use__items">
+                    <div class="use__items__item">
+                        <h3 class="use__items__item__title">コールセンター及びカスタマーサポート業務の自動化</h3>
+                        <div class="use__items__item__details">
+                            <p class="use__items__item__details__detail">問い合わせ内容の自動分類及び回答候補のアドバイス</p>
+                            <p class="use__items__item__details__detail">過去の類似回答の自動検出</p>
+                            <p class="use__items__item__details__detail">サイト上での顧客質問に自動で回答</p>
+                        </div>
+                        <ul class="use__items__item__tags flex">
+                            <li class="use__items__item__tags__tag">問い合わせの分類</li>
+                            <li class="use__items__item__tags__tag">質問回答</li>
+                        </ul>
+                    </div>
+                    <div class="use__items__item">
+                        <h3 class="use__items__item__title">製品・サービスレビュー分析</h3>
+                        <div class="use__items__item__details">
+                            <p class="use__items__item__details__detail">製品やサービスのレビューやアンケート結果に対して感情分析（Sentiment Analysis）をおこなう</p>
+                        </div>
+                        <ul class="use__items__item__tags flex">
+                            <li class="use__items__item__tags__tag">分類</li>
+                            <li class="use__items__item__tags__tag">固有表現抽出</li>
+                        </ul>
+                    </div>
+                    <div class="use__items__item">
+                        <h3 class="use__items__item__title">SDGｓ / ESG分析</h3>
+                        <div class="use__items__item__details">
+                            <p class="use__items__item__details__detail">SDGｓ活動及びESGのスコアリング</p>
+                            <p class="use__items__item__details__detail">投資レポートの自動生成</p>
+                            <p class="use__items__item__details__detail">具体的な製品名や活動名の抽出</p>
+                        </div>
+                        <ul class="use__items__item__tags flex">
+                            <li class="use__items__item__tags__tag">分類</li>
+                            <li class="use__items__item__tags__tag">固有表現抽出</li>
+                        </ul>
+                    </div>
+                    <div class="use__items__item">
+                        <h3 class="use__items__item__title">組織内リスク要因の自動検出</h3>
+                        <div class="use__items__item__details">
+                            <p class="use__items__item__details__detail">リスク箇所の自動検出</p>
+                            <p class="use__items__item__details__detail">リスクリポート作成</p>
+                        </div>
+                        <ul class="use__items__item__tags flex">
+                            <li class="use__items__item__tags__tag">分類</li>
+                            <li class="use__items__item__tags__tag">自動要約</li>
+                            <li class="use__items__item__tags__tag">固有表現抽出</li>
+                        </ul>
+                    </div>
+                    <div class="use__items__item">
+                        <h3 class="use__items__item__title">需要予測</h3>
+                        <div class="use__items__item__details">
+                            <p class="use__items__item__details__detail">海外SNSや海外経済ニュースからグローバル需要予測調査</p>
+                        </div>
+                        <ul class="use__items__item__tags flex">
+                            <li class="use__items__item__tags__tag">分類</li>
+                            <li class="use__items__item__tags__tag">固有表現抽出</li>
+                            <li class="use__items__item__tags__tag">関係性抽出</li>
+                            <li class="use__items__item__tags__tag">自動要約</li>
+                        </ul>
+                    </div>
+                    <div class="use__items__item">
+                        <h3 class="use__items__item__title">特許データや技術文書を検索</h3>
+                        <div class="use__items__item__details">
+                            <p class="use__items__item__details__detail">特許のクリアランス調査（AI検索）</p>
+                            <p class="use__items__item__details__detail">技術用語のクラスタリング、自動要約</p>
+                        </div>
+                        <ul class="use__items__item__tags flex">
+                            <li class="use__items__item__tags__tag">分類</li>
+                            <li class="use__items__item__tags__tag">固有表現抽出</li>
+                            <li class="use__items__item__tags__tag">自動要約</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="use__banner">
+                    <a href="https://www.keywalker.co.jp/data-analysis/ai-search-engine.html">
+                        <img class="use_banner_pc" src="img/use_banner.png" alt="">
+                        <img class="use_banner_sp" src="img/sp_use_banner.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="system">
+            <div class="section_inner">
+                <h2 class="section_title">自然言語処理のシステム構成図</h2>
+                <div class="system__annotation">※ 横にスクロールできます</div>
+                <div class="system__diagram">                    
+                    <img src="img/system_diagram.png" alt="自然言語処理のシステム構成図">
+                </div>
+                <p class="system__lead">Webクローラーで培った技術を応用し、同時に多数のpod/cloud TPUを立ち上げて解析</p>
+                <div class="system__chartList">
+                    <div class="system__chartList__chart flex">
+                        <div class="system__chartList__chart__text">K8Sで多数のpodを立ち上げ</div>
+                        <div class="system__chartList__chart__arrow">
+                            <img src="img/system_chart_arrow.svg" alt="">
+                        </div>
+                        <div class="system__chartList__chart__text">オートスケール可能</div>
+                    </div>
+                    <div class="system__chartList__chart flex">
+                        <div class="system__chartList__chart__text">プリエンプティブルクラスタを利用</div>
+                        <div class="system__chartList__chart__arrow">
+                            <img src="img/system_chart_arrow.svg" alt="">
+                        </div>
+                        <div class="system__chartList__chart__text">利用コストが安い</div>
+                    </div>
+                    <div class="system__chartList__chart flex">
+                        <div class="system__chartList__chart__text">Cloud TPUを利用</div>
+                        <div class="system__chartList__chart__arrow">
+                            <img src="img/system_chart_arrow.svg" alt="">
+                        </div>
+                        <div class="system__chartList__chart__text">GPUを上回る高速演算が可能</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="workflow">
+            <div class="section_inner">
+                <h2 class="section_title">複雑なワークフローも、ノーコードですっきり簡単に。</h2>
+                <div class="workflow__inner flex">
+                    <div class="workflow__inner__img">
+                        <img src="img/workflow_img.png" alt="">
+                    </div>
+                    <div class="workflow__inner__text">
+                        <p class="workflow__inner__text__lead">Senteは、ノーコードの自然言語処理プラットフォームです。</p>
+                        <p class="workflow__inner__text__lead">
+                            従来たくさんの時間とさまざまな人的リソースを要した自然言語処理の作業も、簡単にワンストップで行えます。<br>
+                            情報収集から分析結果の可視化まで、まとめてお任せください。                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="message">
+            <div class="section_inner">
+                <div class="message__img">
+                    <img src="img/message_img.png" alt="">
+                </div>
+                <div class="message__text">
+                    <h2 class="message__text__main">世界を俯瞰し、未来を予測する</h2>
+                    <p class="message__text__lead">
+                        当社のミッションは、「世界を俯瞰し、未来を予測する」です。<br>
+                        私たちが世界と言ったときの世界とは、主としてデータを通してみた世界のことになります。<br>
+                        今世の中に存在するデータの9割は過去2年に生み出されたものだと言われています。<br>
+                        有史以来、人類の数千年の時間の中で生み出された全データのほとんどがこの2年以内に生み出されたものだと言うことです。現代の私たちは、超高速粒子の「タキオン」のように、際限ないスピードで広がっていくデータの中に存在しています。<br>
+                        <br>
+                        世の中には様々なデータがあります。<br>
+                        音声データ、画像・動画データ、IoT等から収集されるセンサーデータ、そしてテキストデータ。<br>
+                        自然言語処理がターゲットとしているのが、ニュース記事やSNS、組織内にある様々な文書である、テキストデータです。<br>
+                        それらのテキストデータを自然言語処理エンジンが意味を理解させ、非構造化データから構造化データへと変換していきます。<br>
+                        非構造化データが構造化データに変換されたことによって、データから未来におこることも予測することが可能になります。<br>
+                        <br>
+                        これが実現したときに、人間のデータへの接し方が一変し、データを取り巻く生態系が変わるはずです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="section_inner">
+                <div class="faq__inner flex">
+                    <h2 class="faq__inner__title">よくあるご質問</h2>
+                    <div class="faq__inner__accordion">
+                        <div class="faq__inner__accordion__item">
+                            <div class="faq__inner__accordion__item__question">よくある質問テキストよくある質問テキストよくある質問テキスト？</div>
+                            <div class="faq__inner__accordion__item__answer">回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示。</div>
+                        </div>
+                        <div class="faq__inner__accordion__item">
+                            <div class="faq__inner__accordion__item__question">よくある質問テキストよくある質問テキストよくある質問テキスト？</div>
+                            <div class="faq__inner__accordion__item__answer">回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示。</div>
+                        </div>
+                        <div class="faq__inner__accordion__item">
+                            <div class="faq__inner__accordion__item__question">よくある質問テキストよくある質問テキストよくある質問テキスト？</div>
+                            <div class="faq__inner__accordion__item__answer">回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示。</div>
+                        </div>
+                        <div class="faq__inner__accordion__item">
+                            <div class="faq__inner__accordion__item__question">よくある質問テキストよくある質問テキストよくある質問テキスト？</div>
+                            <div class="faq__inner__accordion__item__answer">回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示。</div>
+                        </div>
+                        <div class="faq__inner__accordion__item">
+                            <div class="faq__inner__accordion__item__question">よくある質問テキストよくある質問テキストよくある質問テキスト？</div>
+                            <div class="faq__inner__accordion__item__answer">回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示回答テキストをここに表示。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+</body>
+</html>
